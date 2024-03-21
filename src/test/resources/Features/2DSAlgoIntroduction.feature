@@ -1,6 +1,6 @@
 @DSAlgoIntro
 Feature: DS Algo Introduction Page
-  #Validating DsAlgo Intro Page
+  
 
   Scenario: DropDown options check
     Given User Landed on DsAlgo Introduction Page

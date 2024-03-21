@@ -52,9 +52,9 @@ public class Base {
 			}
 			//driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			  //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			// Set Page load timeout
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		//	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			driver.get(configs.getUrl());
 		}
 		return driver;
@@ -71,7 +71,7 @@ public class Base {
 			Properties prop = new Properties();
 			prop.load(fis);
 			configs.setUrl(prop.getProperty("url"));
-			//configs.setBrowser(prop.getProperty("browser"));
+		//	configs.setBrowser(prop.getProperty("browser"));
 			configs.setUserName(prop.getProperty("userName"));
 			configs.setPassword(prop.getProperty("password"));		
 		} catch (FileNotFoundException e) {

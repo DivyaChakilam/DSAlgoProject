@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cucmberOptions.TestRunner">
+      <class name="runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="defineBrowser"/>
           <include name="runScenario"/>
           <include name="tearDownClass"/>
+          <include name="defineBrowser"/>
         </methods>
-      </class> <!-- cucmberOptions.TestRunner -->
+      </class> <!-- runner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

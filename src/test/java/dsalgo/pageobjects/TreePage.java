@@ -64,8 +64,8 @@ public class TreePage {
 	}
 
 	public void sendCodeToEditor(String code) throws InterruptedException {
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(editorTextBoxLoc)).sendKeys(code);
-		//Thread.sleep(100);
+	//	wait.until(ExpectedConditions.visibilityOfElementLocated(editorTextBoxLoc)).sendKeys(code);
+		Thread.sleep(300);
 		driver.findElement(editorTextBoxLoc).sendKeys(code);
 	}
 

@@ -1,5 +1,5 @@
-Feature: Test Case Scenarios for Tree DS
-  Background: clicking on Getstarted below Grpah DS and land on Tree Page
+Feature: Test Case Scenarios for Graph DS
+  Background: clicking on Getstarted below Grpah DS and land on Graph Page
     Given User logged in and landed on Home Page
     When User Clicks Get Started below Graph DS
     Then User should be redirected to Graph Page

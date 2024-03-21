@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="TestChrome(failed)">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="TestChrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="runScenario" invocation-numbers="64 65 40 42 43 44 45 46 52 54 23 55 56 25 26 58 60 29 62"/>
           <include name="defineBrowser"/>
         </methods>
       </class> <!-- runner.TestRunner -->

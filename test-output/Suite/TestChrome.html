@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestChrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>71/19/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 19 22:51:23 EDT 2024</td>
+<td>Started on:</td><td>Thu Mar 21 00:57:40 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9296 ms)</td>
+<tr><td>Total time:</td><td>125 seconds (125443 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,953 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking on concepts under Graph and giving code in try Editor", "Test Case Scenarios for Graph DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3789e2b0e49bf84673489e7121b1c81, sendKeysToElement {id=f.F0D86B1411823845E4033BEEEEE6BAD9.d.EDD90D17B4EFAFB724B796060AB7356F.e.43, value=[Ljava.lang.CharSequence;@40e072c6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59942/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b3789e2b0e49bf84673489e7121b1c81)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: b3789e2b0e49bf84673489e7121b1c81
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778718922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778718922'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3789e2b0e49bf84673489e7121b1c81, sendKeysToElement {id=f.F0D86B1411823845E4033BEEEEE6BAD9.d.EDD90D17B4EFAFB724B796060AB7356F.e.43, value=[Ljava.lang.CharSequence;@40e072c6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59942/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b3789e2b0e49bf84673489e7121b1c81)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: b3789e2b0e49bf84673489e7121b1c81
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+</pre></div></td>
+<td>14</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking on concepts under Graph and giving code in try Editor", "Test Case Scenarios for Graph DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcb9f9090877087e8a53eb683582e5dc, sendKeysToElement {id=f.9E3C8BEB81821DAF3D67340062D1D621.d.5FD4F22CBEBB9C40449E1B97C8D42508.e.32, value=[Ljava.lang.CharSequence;@7c27c6a7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59977/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bcb9f9090877087e8a53eb683582e5dc)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: bcb9f9090877087e8a53eb683582e5dc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530691804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1530691804'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcb9f9090877087e8a53eb683582e5dc, sendKeysToElement {id=f.9E3C8BEB81821DAF3D67340062D1D621.d.5FD4F22CBEBB9C40449E1B97C8D42508.e.32, value=[Ljava.lang.CharSequence;@7c27c6a7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59977/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bcb9f9090877087e8a53eb683582e5dc)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: bcb9f9090877087e8a53eb683582e5dc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+</pre></div></td>
+<td>14</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [856ff0d748e9c34845b0bda1715bf164, sendKeysToElement {id=f.9CC8F8F6E8496BDA336EAAC8F72D6BA1.d.C7C152C7B9AFA336FF7767D223388EEA.e.29, value=[Ljava.lang.CharSequence;@1d141b8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (856ff0d748e9c34845b0bda1715bf164)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 856ff0d748e9c34845b0bda1715bf164
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1142905918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1142905918'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [856ff0d748e9c34845b0bda1715bf164, sendKeysToElement {id=f.9CC8F8F6E8496BDA336EAAC8F72D6BA1.d.C7C152C7B9AFA336FF7767D223388EEA.e.29, value=[Ljava.lang.CharSequence;@1d141b8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (856ff0d748e9c34845b0bda1715bf164)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 856ff0d748e9c34845b0bda1715bf164
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8227cc0958bd19c4a8e1c48b79070871, sendKeysToElement {id=f.9648A4E79C7A2B34B983161E36BD1BC5.d.FB09E131259B2EEB9E5B5657E4BB2508.e.28, value=[Ljava.lang.CharSequence;@5e5ad4bc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59672/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8227cc0958bd19c4a8e1c48b79070871)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 8227cc0958bd19c4a8e1c48b79070871
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace953195027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace953195027'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8227cc0958bd19c4a8e1c48b79070871, sendKeysToElement {id=f.9648A4E79C7A2B34B983161E36BD1BC5.d.FB09E131259B2EEB9E5B5657E4BB2508.e.28, value=[Ljava.lang.CharSequence;@5e5ad4bc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59672/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8227cc0958bd19c4a8e1c48b79070871)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 8227cc0958bd19c4a8e1c48b79070871
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>15</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7a9a4bcfda56c6c607113e95d8fd842, sendKeysToElement {id=f.3E1B99FDA683B87FC024D74850B9358E.d.EC640B4ABD2F6048E142F1EC45831E0E.e.45, value=[Ljava.lang.CharSequence;@7b6b41e4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59756/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d7a9a4bcfda56c6c607113e95d8fd842)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: d7a9a4bcfda56c6c607113e95d8fd842
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078932396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078932396'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7a9a4bcfda56c6c607113e95d8fd842, sendKeysToElement {id=f.3E1B99FDA683B87FC024D74850B9358E.d.EC640B4ABD2F6048E142F1EC45831E0E.e.45, value=[Ljava.lang.CharSequence;@7b6b41e4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59756}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59756/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d7a9a4bcfda56c6c607113e95d8fd842)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: d7a9a4bcfda56c6c607113e95d8fd842
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>15</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b58d78b7516880a8010c10cb139bca3, sendKeysToElement {id=f.6ADF2A2EF3852D0143D47CF0157E316F.d.9E33DD2AF9E37A5EF69C30469D5988BF.e.46, value=[Ljava.lang.CharSequence;@3301e923}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58549/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b58d78b7516880a8010c10cb139bca3)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 0b58d78b7516880a8010c10cb139bca3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472888773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace472888773'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b58d78b7516880a8010c10cb139bca3, sendKeysToElement {id=f.6ADF2A2EF3852D0143D47CF0157E316F.d.9E33DD2AF9E37A5EF69C30469D5988BF.e.46, value=[Ljava.lang.CharSequence;@3301e923}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58549/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b58d78b7516880a8010c10cb139bca3)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 0b58d78b7516880a8010c10cb139bca3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ceeb9a267d5ffb7d153e00d9538ffc18, sendKeysToElement {id=f.05839AF4F74E7AFCCCA300A64E629F02.d.44B92F3FA0B0246E175A8F69F0DB9BD6.e.32, value=[Ljava.lang.CharSequence;@50a89026}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59732/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ceeb9a267d5ffb7d153e00d9538ffc18)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: ceeb9a267d5ffb7d153e00d9538ffc18
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1919041896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919041896'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ceeb9a267d5ffb7d153e00d9538ffc18, sendKeysToElement {id=f.05839AF4F74E7AFCCCA300A64E629F02.d.44B92F3FA0B0246E175A8F69F0DB9BD6.e.32, value=[Ljava.lang.CharSequence;@50a89026}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59732/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ceeb9a267d5ffb7d153e00d9538ffc18)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: ceeb9a267d5ffb7d153e00d9538ffc18
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>15</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f06198bc7a989af1a02c247d61b69acc, sendKeysToElement {id=f.4A39B58E6D4D8DAD65DD821CF5FE9F59.d.86A666EA3088A0EAC34F5F2E2D35C47D.e.33, value=[Ljava.lang.CharSequence;@4368299e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59200/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f06198bc7a989af1a02c247d61b69acc)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: f06198bc7a989af1a02c247d61b69acc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace617744345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace617744345'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f06198bc7a989af1a02c247d61b69acc, sendKeysToElement {id=f.4A39B58E6D4D8DAD65DD821CF5FE9F59.d.86A666EA3088A0EAC34F5F2E2D35C47D.e.33, value=[Ljava.lang.CharSequence;@4368299e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59200/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f06198bc7a989af1a02c247d61b69acc)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: f06198bc7a989af1a02c247d61b69acc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking on concepts under Graph and giving code in try Editor", "Test Case Scenarios for Graph DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4e7b8fb3388b376c861179c56864d50, sendKeysToElement {id=f.1F022B1E7461650816311C0A010933FF.d.B469D015FC1C93CE52B06DBDAC878883.e.50, value=[Ljava.lang.CharSequence;@7f4ed738}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60097/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4e7b8fb3388b376c861179c56864d50)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: e4e7b8fb3388b376c861179c56864d50
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace692290728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692290728'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4e7b8fb3388b376c861179c56864d50, sendKeysToElement {id=f.1F022B1E7461650816311C0A010933FF.d.B469D015FC1C93CE52B06DBDAC878883.e.50, value=[Ljava.lang.CharSequence;@7f4ed738}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60097/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4e7b8fb3388b376c861179c56864d50)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: e4e7b8fb3388b376c861179c56864d50
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+</pre></div></td>
+<td>14</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c54e300f1fb5fd5b00390cd95a17fd51, sendKeysToElement {id=f.924920AA07D734822BC32934B30B03C6.d.3515BC541E62F37B9E26F48029B7BD60.e.31, value=[Ljava.lang.CharSequence;@6c26ac39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59305/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c54e300f1fb5fd5b00390cd95a17fd51)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: c54e300f1fb5fd5b00390cd95a17fd51
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211367382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211367382'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c54e300f1fb5fd5b00390cd95a17fd51, sendKeysToElement {id=f.924920AA07D734822BC32934B30B03C6.d.3515BC541E62F37B9E26F48029B7BD60.e.31, value=[Ljava.lang.CharSequence;@6c26ac39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59305/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c54e300f1fb5fd5b00390cd95a17fd51)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: c54e300f1fb5fd5b00390cd95a17fd51
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bb54784351d6e7bc9dcf22a27db8533, sendKeysToElement {id=f.904C2C079021F60D2D558B1571BEDD6D.d.7AE8E5E9C85DC3CB92CAE58DF53464A5.e.32, value=[Ljava.lang.CharSequence;@efd50ff}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9bb54784351d6e7bc9dcf22a27db8533)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 9bb54784351d6e7bc9dcf22a27db8533
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1085015262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1085015262'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bb54784351d6e7bc9dcf22a27db8533, sendKeysToElement {id=f.904C2C079021F60D2D558B1571BEDD6D.d.7AE8E5E9C85DC3CB92CAE58DF53464A5.e.32, value=[Ljava.lang.CharSequence;@efd50ff}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59384/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9bb54784351d6e7bc9dcf22a27db8533)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 9bb54784351d6e7bc9dcf22a27db8533
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51bae67ca636f9824431edbe8661802f, sendKeysToElement {id=f.F520D2B68EBFE9007899E6DE05761950.d.ED0F820BBA9F6C7B48AC442B533594D2.e.34, value=[Ljava.lang.CharSequence;@45b3fc14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59694/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (51bae67ca636f9824431edbe8661802f)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 51bae67ca636f9824431edbe8661802f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1028808545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1028808545'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51bae67ca636f9824431edbe8661802f, sendKeysToElement {id=f.F520D2B68EBFE9007899E6DE05761950.d.ED0F820BBA9F6C7B48AC442B533594D2.e.34, value=[Ljava.lang.CharSequence;@45b3fc14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59694/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (51bae67ca636f9824431edbe8661802f)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 51bae67ca636f9824431edbe8661802f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>15</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_should_be_redirected_to_editor_s_page_with_run_button(TreePageStepDefinitions.java:89)
+	at ✽.User should be redirected to Editor&apos;s page with Run Button(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1691071325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1691071325'><pre>java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_should_be_redirected_to_editor_s_page_with_run_button(TreePageStepDefinitions.java:89)
+	at ✽.User should be redirected to Editor&apos;s page with Run Button(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:14)
+</pre></div></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b4ea5c3ff02fa2e7cc5fcb54cbad798, sendKeysToElement {id=f.43F653B72ED29B1C6CA5C94621E45029.d.BAAACAC9053384CF76E80B9EA60947ED.e.45, value=[Ljava.lang.CharSequence;@767a480f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58595/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4b4ea5c3ff02fa2e7cc5fcb54cbad798)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 4b4ea5c3ff02fa2e7cc5fcb54cbad798
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2058044915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2058044915'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b4ea5c3ff02fa2e7cc5fcb54cbad798, sendKeysToElement {id=f.43F653B72ED29B1C6CA5C94621E45029.d.BAAACAC9053384CF76E80B9EA60947ED.e.45, value=[Ljava.lang.CharSequence;@767a480f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58595/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4b4ea5c3ff02fa2e7cc5fcb54cbad798)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 4b4ea5c3ff02fa2e7cc5fcb54cbad798
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16e6fb795677fea5b709ae11732e2e9b, sendKeysToElement {id=f.36698A5C44F6CFAEEF653B713D133199.d.3A32858FED0795CD78D5E1EF947E544E.e.29, value=[Ljava.lang.CharSequence;@4703d61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58690/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (16e6fb795677fea5b709ae11732e2e9b)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 16e6fb795677fea5b709ae11732e2e9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1124278170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1124278170'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16e6fb795677fea5b709ae11732e2e9b, sendKeysToElement {id=f.36698A5C44F6CFAEEF653B713D133199.d.3A32858FED0795CD78D5E1EF947E544E.e.29, value=[Ljava.lang.CharSequence;@4703d61}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58690/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (16e6fb795677fea5b709ae11732e2e9b)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 16e6fb795677fea5b709ae11732e2e9b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>19</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b3e5499c4211472f00d8ac41c0f8331, sendKeysToElement {id=f.D351CBEAEFA140C38ADA49D011DD2BC4.d.AD4EA2666BE61C04698F6CAD04125613.e.35, value=[Ljava.lang.CharSequence;@6a456294}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59223/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1b3e5499c4211472f00d8ac41c0f8331)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 1b3e5499c4211472f00d8ac41c0f8331
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1364678702", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1364678702'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b3e5499c4211472f00d8ac41c0f8331, sendKeysToElement {id=f.D351CBEAEFA140C38ADA49D011DD2BC4.d.AD4EA2666BE61C04698F6CAD04125613.e.35, value=[Ljava.lang.CharSequence;@6a456294}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59223/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1b3e5499c4211472f00d8ac41c0f8331)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 1b3e5499c4211472f00d8ac41c0f8331
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 0(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>17</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking on concepts under Graph and giving code in try Editor", "Test Case Scenarios for Graph DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdaf66e7b5d636f7740ddc3e6118bad1, sendKeysToElement {id=f.856FEF5601A5CB5FA02E527D79D3860C.d.EB4992E074E1D0AA48AA15055680A45B.e.48, value=[Ljava.lang.CharSequence;@57482a7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60067/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cdaf66e7b5d636f7740ddc3e6118bad1)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: cdaf66e7b5d636f7740ddc3e6118bad1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace567214614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace567214614'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdaf66e7b5d636f7740ddc3e6118bad1, sendKeysToElement {id=f.856FEF5601A5CB5FA02E527D79D3860C.d.EB4992E074E1D0AA48AA15055680A45B.e.48, value=[Ljava.lang.CharSequence;@57482a7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60067/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cdaf66e7b5d636f7740ddc3e6118bad1)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: cdaf66e7b5d636f7740ddc3e6118bad1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.GraphPageStepDefinitions.user_clicks_on_run_button_for_graph_entering_code_and(GraphPageStepDefinitions.java:95)
+	at ✽.User clicks on Run Button for graph entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/6Graph.feature:14)
+</pre></div></td>
+<td>14</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bfc5274dcde6f3a57492a2760aae868, sendKeysToElement {id=f.A87F931DED45C1BCBC20E84F7330D980.d.01235E15BA3DFF7A9E8C1F997251EC50.e.36, value=[Ljava.lang.CharSequence;@10fc8c96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58613}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58613/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8bfc5274dcde6f3a57492a2760aae868)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 8bfc5274dcde6f3a57492a2760aae868
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1470130330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470130330'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bfc5274dcde6f3a57492a2760aae868, sendKeysToElement {id=f.A87F931DED45C1BCBC20E84F7330D980.d.01235E15BA3DFF7A9E8C1F997251EC50.e.36, value=[Ljava.lang.CharSequence;@10fc8c96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58613}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58613/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8bfc5274dcde6f3a57492a2760aae868)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: 8bfc5274dcde6f3a57492a2760aae868
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 2(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>19</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bea4874d8d49279176331ac37ef6926c, sendKeysToElement {id=f.80DF22A7F76F9E8BDDFFE57B633A93F6.d.11BD27220BF10D84C3675BA44146D5FC.e.33, value=[Ljava.lang.CharSequence;@6a3cc448}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59872/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bea4874d8d49279176331ac37ef6926c)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: bea4874d8d49279176331ac37ef6926c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace358329253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace358329253'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bea4874d8d49279176331ac37ef6926c, sendKeysToElement {id=f.80DF22A7F76F9E8BDDFFE57B633A93F6.d.11BD27220BF10D84C3675BA44146D5FC.e.33, value=[Ljava.lang.CharSequence;@6a3cc448}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\12159\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59872/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bea4874d8d49279176331ac37ef6926c)] -&gt; xpath: //form[@id=&apos;answer_form&apos;]/div/div/div/textarea]
+Session ID: bea4874d8d49279176331ac37ef6926c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at dsalgo.pageobjects.TreePage.sendCodeToEditor(TreePage.java:69)
+	at dsalgo.stepdefinitions.TreePageStepDefinitions.user_clicks_on_run_button_entering_code_and(TreePageStepDefinitions.java:105)
+	at ✽.User clicks on Run Button entering code &quot;Input and Output&quot; and 1(file:///C:/Users/12159/git/DSAlgoProject/src/test/resources/Features/5TreeDS.feature:15)
+</pre></div></td>
+<td>15</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,9 +1023,359 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Land on algoportal and click GetStarted", "Landing on dsalgoportal"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
 <td></td>
 <td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>65</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DropDown options check", "DS Algo Introduction Page"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>47</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>63</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>13</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login process with all empty fields", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicks any Ds GetStarted button and check error message", "DS Algo Introduction Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>52</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>58</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login process for User with invalid data", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid password fields with all numbers and lessthan 8 characters", "Register Page Test Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login process for User with invalid data", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with space and * in username field", "Register Page Test Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login process for User with invalid data", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with only username field", "Register Page Test Scenarios"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>10</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login process for User with invalid data", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with passwords mismatch", "Register Page Test Scenarios"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>43</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login process for User with invalid data", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>10</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>60</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DropDown option click and check for error message", "DS Algo Introduction Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking on concepts under Graph and giving code in try Editor", "Test Case Scenarios for Graph DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Land on algoportal and click GetStarted", "Landing on dsalgoportal"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Land on Registration Page", "DS Algo Introduction Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking on concepts under Graph and giving code in try Editor", "Test Case Scenarios for Graph DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register without confirm password field", "Register Page Test Scenarios"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating Login Page with valid data", "Login Page Test Case Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with existing username and password", "Register Page Test Scenarios"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid password fields with all numbers and lessthan 8 characters", "Register Page Test Scenarios"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing Arrays Functionality", "Testing Array Module functionality"</td>
+<td></td>
+<td>50</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "testing on Array practice Questions", "Testing Array Module functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with empty fields", "Register Page Test Scenarios"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Landing on Login Page", "DS Algo Introduction Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50dfbc58</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "clicking on concepts under tree and giving code in try Editor", "Test Case Scenarios for Tree DS"</td>
+<td></td>
+<td>4</td>
 <td>runner.TestRunner@50dfbc58</td></tr>
 </table><p>
 </body>
