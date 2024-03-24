@@ -16,6 +16,7 @@ public class PageObjectManager {
 	public GraphPage graphPage;
 	public ArraysPage arraysPage;
 	public DataStructuresPage dataStructuresPage;
+	public LinkedListPage linkedlistpage;
 
 	public WebDriver driver;
 	private CommonConfigs commonConfigs;
@@ -72,5 +73,9 @@ public class PageObjectManager {
 	public DataStructuresPage getDataStructuresPage() {
 		dataStructuresPage = new DataStructuresPage(driver, commonConfigs);
 		return dataStructuresPage;
+	}
+	public LinkedListPage getLinkedListPage() {
+		linkedlistpage = new LinkedListPage(driver, commonConfigs);
+		return linkedlistpage;
 	}
 }

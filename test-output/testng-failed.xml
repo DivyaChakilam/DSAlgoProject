@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="classes" name="TestChrome(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="classes" name="Testfirefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="107"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="64 65 40 42 43 44 45 46 52 54 23 55 56 25 26 58 60 29 62"/>
           <include name="defineBrowser"/>
         </methods>
       </class> <!-- runner.TestRunner -->
     </classes>
-  </test> <!-- TestChrome(failed) -->
+  </test> <!-- Testfirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

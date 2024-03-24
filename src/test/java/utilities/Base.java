@@ -9,8 +9,11 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import config.CommonConfigs;
@@ -31,28 +34,34 @@ public class Base {
 			loadCommonConfigs();
 			if (browser.equalsIgnoreCase("firefox")) {
 				LoggerLoad.info("Testing on firefox");
-				//WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
+				FirefoxOptions ffOpt = new FirefoxOptions();
+				ffOpt.addArguments("--headless=new");
+				driver = new FirefoxDriver(ffOpt);
+			//	driver = new FirefoxDriver();
 
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				LoggerLoad.info("Testing on chrome");
-				//WebDriverManager.chromedriver().browserVersion("108.0.0").setup();
+				ChromeOptions ChromeOpt = new ChromeOptions();
+				ChromeOpt.addArguments("--headless=new");
 				System.setProperty("webdriver.chrome.silentOutput","true");
-				driver = new ChromeDriver();
+			//	driver = new ChromeDriver();
+				driver = new ChromeDriver(ChromeOpt);
 
 			} else if (browser.equalsIgnoreCase("safari")) {
 				LoggerLoad.info("Testing on safari");
-				//WebDriverManager.safaridriver().setup();
+			
 				driver = new SafariDriver();
 
 			} else if (browser.equalsIgnoreCase("edge")) {
 				LoggerLoad.info("Testing on Edge");
-				//WebDriverManager.edgedriver().setup();
-				driver = new EdgeDriver();
+				EdgeOptions edgeOpt = new EdgeOptions();
+				edgeOpt.addArguments("--headless=new");
+				//driver = new EdgeDriver();
+				driver = new EdgeDriver(edgeOpt);
 			}
 			//driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			// Set Page load timeout
 		//	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			driver.get(configs.getUrl());

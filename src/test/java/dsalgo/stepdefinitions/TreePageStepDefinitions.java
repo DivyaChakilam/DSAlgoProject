@@ -102,9 +102,10 @@ public class TreePageStepDefinitions {
 		LoggerLoad.info("code enterd : "+inputCode);
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
+		Thread.sleep(2000);
 		treepage.sendCodeToEditor(inputCode);
 		treepage.runButtonClick();
-		
+
 	}
 
 	@Then("User should be able to see the output on the console")

@@ -3,19 +3,19 @@
 Feature: Testing Array Module functionality
 	   
  Background: 
-   	Given User logged in and is on on DSHome Page
-    When User Clicks Get Started below ArrayDS
-    Then User should be redirected to Array Page
+   	Given User logged in and is on DSHome Page
+    When The User Clicks Get Started below ArrayDS
+    Then The User should be redirected to Array Page
     
     @ArraysConcepts
   Scenario Outline: testing Arrays Functionality
-    Given User is on Array page
-    When User clicks on "<ArraysConcepts>" Link
-    Then User should be redirected to clicked Page 
-    When User clicks on TryHere button
-    Then User should be redirected to Editor's Page with Run button
-    When User clicks on Run Button after entering code "<SheetName>" and <Rownum>
-    Then User should be able to see the output in the console
+    Given The User is on Array page
+    When The User clicks on "<ArraysConcepts>" Link
+    Then The User should be redirected to clicked Page 
+    When The User clicks on TryHere button
+    Then The User should be redirected to Editor's Page with Run button
+    When The User clicks on Run Button after entering Array code "<SheetName>" and <Rownum>
+    Then The User should be able to see the output in the console
  
    Examples:   
     |   SheetName    | Rownum | ArraysConcepts  |
@@ -34,17 +34,17 @@ Feature: Testing Array Module functionality
    
     @PracticeQuestion
     Scenario Outline: testing on Array practice Questions
-     Given User is on Array page
-     When User clicks on Arrays in Python Link
-     Then User should be redirected to Arrays in Python Page 
-     When User clicks on PracticeQuestion Link
-     Then User should be redirected to Practice question Page
-     When User clicks on "<PracticeQuestionList>" Page
-     Then User should be redirected to clicked Question Page with Run and Submit Button
-     When User clicks on Run button after entering code "<SheetName>" and <Rownum>
-     Then User should see Run output in the console
-     When User clicks on Submit Button after entering code "<SheetName>" and <Rownum>
-     Then User should see Submit output in the console
+     Given The User is on Array page
+     When The User clicks on Arrays in Python Link
+     Then The User should be redirected to Arrays in Python Page 
+     When The User clicks on PracticeQuestion Link
+     Then The User should be redirected to Practice question Page
+     When The User clicks on "<PracticeQuestionList>" Page
+     Then The User should be redirected to clicked Question Page with Run and Submit Button
+     When The User clicks on Run after entering Array Prac code "<SheetName>" and <Rownum>
+     Then The User should see Run output in the console
+     When The User clicks on Submit Button after entering Array Prac code "<SheetName>" and <Rownum>
+     Then The User should see Submit output in the console
      
    Examples:   
     |SheetName| Rownum | PracticeQuestionList  |
