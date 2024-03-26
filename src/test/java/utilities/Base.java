@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Optional;
 import java.util.Properties;
 //import java.util.concurrent.TimeUnit;
 
@@ -24,9 +25,11 @@ import config.ConfigLoader;
 public class Base {
 
 	public WebDriver driver;
+	
 	String url = "https://dsportalapp.herokuapp.com/";
 	public CommonConfigs configs;
 	
+
 	public WebDriver WebDriverManager() throws Throwable {
 		
 		String browser = ConfigLoader.getBrowserType();
@@ -43,7 +46,7 @@ public class Base {
 				LoggerLoad.info("Testing on chrome");
 				ChromeOptions ChromeOpt = new ChromeOptions();
 				ChromeOpt.addArguments("--headless=new");
-				System.setProperty("webdriver.chrome.silentOutput","true");
+			//	System.setProperty("webdriver.chrome.silentOutput","true");
 			//	driver = new ChromeDriver();
 				driver = new ChromeDriver(ChromeOpt);
 
@@ -56,8 +59,9 @@ public class Base {
 				LoggerLoad.info("Testing on Edge");
 				EdgeOptions edgeOpt = new EdgeOptions();
 				edgeOpt.addArguments("--headless=new");
-				//driver = new EdgeDriver();
 				driver = new EdgeDriver(edgeOpt);
+			//	driver = new EdgeDriver();
+				
 			}
 			//driver = new ChromeDriver();
 			driver.manage().window().maximize();
