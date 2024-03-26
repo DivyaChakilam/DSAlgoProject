@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", 
 					glue = {"dsalgo.stepdefinitions"},
-					tags = "@DSIntroduction",
+					//tags = "@DSIntroduction",
 					plugin = {"pretty", "html:target/cucumber-Reports.html" , "json:target/cucumber.json",
 							"junit:target/Cucumber.xml",
 							"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
