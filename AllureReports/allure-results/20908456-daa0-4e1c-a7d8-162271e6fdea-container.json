@@ -1,1 +1,0 @@
-{"uuid":"20908456-daa0-4e1c-a7d8-162271e6fdea","name":"TestChrome","children":[],"befores":[{"name":"defineBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1710993980649,"stop":1710993980652}],"afters":[],"start":1710993980638,"stop":1710994070757}
