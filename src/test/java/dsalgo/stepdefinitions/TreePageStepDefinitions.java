@@ -102,7 +102,7 @@ public class TreePageStepDefinitions {
 		LoggerLoad.info("code enterd : "+inputCode);
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
-		Thread.sleep(1200);
+		Thread.sleep(700);
 		treepage.sendCodeToEditor(inputCode);
 		treepage.runButtonClick();
 

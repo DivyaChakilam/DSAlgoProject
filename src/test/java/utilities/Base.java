@@ -65,7 +65,7 @@ public class Base {
 			}
 			//driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			//  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			// Set Page load timeout
 		//	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			driver.get(configs.getUrl());
