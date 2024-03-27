@@ -105,7 +105,7 @@ public class StackPageStepDefinitions {
 
 		String expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
-		Thread.sleep(1500);
+		//Thread.sleep(800);
 		stackpage.sendCodeToEditor(inputCode);
 		stackpage.runButtonClick();
 		

@@ -33,7 +33,7 @@ public class DataStructuresPage
 	{
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
-		this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		//this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 	}
 	public CommonConfigs getCommonConfigs() {
 		return commonConfigs;

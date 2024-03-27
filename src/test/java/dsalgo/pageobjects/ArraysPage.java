@@ -79,9 +79,9 @@ public class ArraysPage {
 	}
 	
 	public void sendCodeToEditor(String Code) throws InterruptedException  {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 		driver.findElement(editorTextBoxLoc).sendKeys(Code);
-		//Thread.sleep(1000);
+		Thread.sleep(900);
 	}
 	public void sendCodeToPractice(String Code) {
 		WebElement codeMirror=driver.findElement(By.className("CodeMirror"));
@@ -99,7 +99,7 @@ public class ArraysPage {
 	
 	public void submitButtonClick()
 	{
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(submitButtonLoc).click();
 		}
 	
@@ -108,7 +108,7 @@ public class ArraysPage {
 		return driver.getTitle();
 	}
 	public String getOutput() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		outputMessage = driver.findElement(outputmsgline).getText();
 		System.out.println(outputMessage);
 		return outputMessage;

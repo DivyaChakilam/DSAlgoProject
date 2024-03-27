@@ -80,7 +80,7 @@ public class LinkedListPage
 		}
 		public void sendCodeToEditor(String code)throws InterruptedException
 		{
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 			driver.findElement(editorTextBox).sendKeys(code);
 		}
 		

@@ -104,7 +104,7 @@ public class ArrayPageStepDefinitions {
 		expoutput = userData.get(rowNumber).get("Output");
 
 		LoggerLoad.info("Expected Output : " + expoutput);
-		Thread.sleep(1500);
+		Thread.sleep(700);
 		arraypage.sendCodeToEditor(inputCode);
 
 		arraypage.runButtonClick();
@@ -179,7 +179,7 @@ public class ArrayPageStepDefinitions {
 		System.out.println("Expected Output : " + expoutput);
 
 		arraypage.sendCodeToPractice(inputCode);
-		Thread.sleep(1000);
+		Thread.sleep(400);
 		arraypage.runButtonClick();
 
 	}
@@ -218,7 +218,7 @@ public class ArrayPageStepDefinitions {
 		arraypage.sendCodeToPractice(inputCode);
 
 		arraypage.submitButtonClick();
-		Thread.sleep(1300);
+		Thread.sleep(700);
 
 	}
 

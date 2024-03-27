@@ -30,7 +30,7 @@ public class TreePage {
 	public TreePage(WebDriver driver, CommonConfigs commonConfigs) {
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
-		this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		//this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 	}
 
 	public CommonConfigs getCommonConfigs() {
@@ -66,7 +66,7 @@ public class TreePage {
 	public void sendCodeToEditor(String code) throws InterruptedException {
 	//	wait.until(ExpectedConditions.visibilityOfElementLocated(editorTextBoxLoc)).sendKeys(code);
 		Thread.sleep(500);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 		driver.findElement(editorTextBoxLoc).sendKeys(code);
 	}
 

@@ -113,7 +113,7 @@ public class DataStructureStepDefinitions {
 		LoggerLoad.info("Expected Output : "+expOutput);
 		
 		treepage.sendCodeToEditor(inputCode);
-		Thread.sleep(500);
+		//Thread.sleep(500);
 		treepage.runButtonClick();
 
 	}

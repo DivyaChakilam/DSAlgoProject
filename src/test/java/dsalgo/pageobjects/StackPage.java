@@ -70,7 +70,7 @@ public class StackPage {
 	}
 
 	public void sendCodeToEditor(String code) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.findElement(editorTextBoxLoc).sendKeys(code);
 	}
 

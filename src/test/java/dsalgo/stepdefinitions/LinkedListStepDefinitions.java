@@ -114,7 +114,7 @@ public class LinkedListStepDefinitions
 		LoggerLoad.info("code enterd : "+inputCode);
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
-		Thread.sleep(500);
+	//	Thread.sleep(500);
 		treepage.sendCodeToEditor(inputCode);
 		treepage.runButtonClick();
 		
