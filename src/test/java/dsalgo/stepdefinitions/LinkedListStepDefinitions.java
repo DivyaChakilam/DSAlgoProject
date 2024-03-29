@@ -122,6 +122,7 @@ public class LinkedListStepDefinitions
 	//	Thread.sleep(500);
 		CommonLocators.sendCodeToEditor(inputCode, this.linkedlistpage.driver);
 		CommonLocators.runButtonClick(this.linkedlistpage.driver);
+		Thread.sleep(500);
 		
 	}
 	
