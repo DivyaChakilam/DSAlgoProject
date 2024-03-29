@@ -41,10 +41,12 @@ public class TreePageStepDefinitions {
 
 	@Given("^User logged in and landed on Home Page$")
 	public void user_logged_in_and_landed_on_home_page() {
-		LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
-		landingPage.getStartedClick();
-		DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-		dsalgoIntroduction.clickLogin();
+		/*
+		 * LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
+		 * landingPage.getStartedClick(); DSAlgoIntroductionPage dsalgoIntroduction =
+		 * testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+		 * dsalgoIntroduction.clickLogin();
+		 */
 		loginpage.enterUsername(treepage.getCommonConfigs().getUserName());
 		loginpage.enterPassword(treepage.getCommonConfigs().getPassword());
 		loginpage.submitLogin();

@@ -8,6 +8,7 @@ import org.junit.Assert;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
+import config.CommonLocators;
 import dsalgo.pageobjects.GraphPage;
 import dsalgo.pageobjects.LoginPage;
 import dsalgo.pageobjects.RegisterPage;
@@ -24,7 +25,7 @@ public class GraphPageStepDefinitions {
 	public LoginPage loginpage;
 	TestContextSetup testContSetup ;
 	public RegisterPage registerpage;
-	public TreePage treepage;
+	//public TreePage treepage;
 	public GraphPage graphPage;
 	public String outputmessage = "Hello, world!";
 	public String expTitle;
@@ -34,7 +35,7 @@ public class GraphPageStepDefinitions {
 	public GraphPageStepDefinitions(TestContextSetup testContSetup) {
 		this.testContSetup = testContSetup;
 		this.loginpage = testContSetup.pageObjManager.getLoginPage();
-		this.treepage = testContSetup.pageObjManager.getTreePage();
+		//this.treepage = testContSetup.pageObjManager.getTreePage();
 		this.graphPage = testContSetup.pageObjManager.getGraphPage();
 	}
 	
@@ -47,7 +48,7 @@ public class GraphPageStepDefinitions {
 	@Then("User should be redirected to Graph Page")
 	public void user_should_be_redirected_to_graph_page() {
 		String ExpTitle = "Graph";
-		Assert.assertEquals(treepage.getTitleName(), ExpTitle);
+		Assert.assertEquals(CommonLocators.getTitleName(this.graphPage.driver), ExpTitle);
 		LoggerLoad.info("User Landed on Grpah Page");
 	}
 
@@ -64,19 +65,19 @@ public class GraphPageStepDefinitions {
 	
 	@Then("User should be redirected to the clicked Graph link Page")
 	public void user_should_be_redirected_to_the_clicked_graph_link_page() {
-		Assert.assertEquals(treepage.getTitleName(),expTitle);
+		Assert.assertEquals(CommonLocators.getTitleName(this.graphPage.driver),expTitle);
 
 	}
 
 	@When("User clicks on graph Try Here Button")
 	public void user_clicks_on_graph_try_here_button() {
-		treepage.tryHereClick();
+		CommonLocators.tryHereClick(this.graphPage.driver);
 
 	}
 
 	@Then("User should be redirected to graph Editor's page with Run Button")
 	public void user_should_be_redirected_to_graph_editor_s_page_with_run_button() {
-		Assert.assertEquals(treepage.checkRunButton(), true);
+		Assert.assertEquals(CommonLocators.checkRunButton(this.graphPage.driver), true);
 
 	}
 
@@ -92,21 +93,21 @@ public class GraphPageStepDefinitions {
 		LoggerLoad.info("code enterd : "+inputCode);
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
-		treepage.sendCodeToEditor(inputCode);
-		treepage.runButtonClick();
+		CommonLocators.sendCodeToEditor(inputCode, this.graphPage.driver);
+		CommonLocators.runButtonClick(this.graphPage.driver);
 	}
 
 	@Then("User should be able to see the output on the graph console")
 	public void user_should_be_able_to_see_the_output_on_the_graph_console() {
 		if(inputCode.equals(" ")) {
-			Assert.assertEquals(expOutput, treepage.getOutput());
+			Assert.assertEquals(expOutput, CommonLocators.getOutput(this.graphPage.driver));
 		} else if(inputCode.equalsIgnoreCase("hello world")) {
 			LoggerLoad.info("Entered this condition");
-			treepage.navigateToAlert();
-			Assert.assertEquals(expOutput, treepage.alertMessage);
-			treepage.acceptAlert();
+			CommonLocators.navigateToAlert(this.graphPage.driver);
+			Assert.assertEquals(expOutput, CommonLocators.alertMessage);
+			CommonLocators.acceptAlert(this.graphPage.driver);
 		} else if(inputCode.equals("print('Hello, world!'")) {
-			Assert.assertEquals(expOutput, treepage.getOutput()); 
+			Assert.assertEquals(expOutput, CommonLocators.getOutput(this.graphPage.driver)); 
 		}
 	}
 

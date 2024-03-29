@@ -1,5 +1,5 @@
 @DSAlgoIntro
-Feature: DS Algo Introduction Page
+Feature: TestCase Scenarios for DS Algo Introduction Page before Login
   
 
   Scenario: DropDown options check

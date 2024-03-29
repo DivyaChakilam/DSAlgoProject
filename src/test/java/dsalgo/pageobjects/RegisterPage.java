@@ -4,9 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import config.CommonConfigs;
+
 public class RegisterPage {
 
 	private WebDriver driver;
+	private CommonConfigs commonConfigs;
 	public String messageStr;
 	public String errorMessage;
 	private WebElement activeElement;
@@ -16,10 +19,21 @@ public class RegisterPage {
 	private By confirmPassWordLoc = By.name("password2");
 	private By errorMess = By.xpath("//div[contains(@class,'alert')]") ;
 
-	public RegisterPage(WebDriver driver) {
+	public RegisterPage(WebDriver driver, CommonConfigs commonConfigs) {
 		this.driver = driver;
+		this.commonConfigs = commonConfigs;
+		this.driver.get(commonConfigs.getRegisterUrl());
+
 	}
 
+	public CommonConfigs getCommonConfigs() {
+		return commonConfigs;
+	}
+
+	public void setCommonConfigs(CommonConfigs commonConfigs) {
+		this.commonConfigs = commonConfigs;
+	}
+	
 	public void submitRegister() {
 		driver.findElement(RegisterButton).click();
 	}

@@ -47,7 +47,7 @@ public class Base {
 				ChromeOptions ChromeOpt = new ChromeOptions();
 				ChromeOpt.addArguments("--headless=new");
 			//	System.setProperty("webdriver.chrome.silentOutput","true");
-			//	driver = new ChromeDriver();
+				//driver = new ChromeDriver();
 				driver = new ChromeDriver(ChromeOpt);
 
 			} else if (browser.equalsIgnoreCase("safari")) {
@@ -68,7 +68,7 @@ public class Base {
 			//  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			// Set Page load timeout
 		//	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-			driver.get(configs.getUrl());
+			driver.get(configs.getLoginUrl());
 		}
 		return driver;
 	}
@@ -84,6 +84,8 @@ public class Base {
 			Properties prop = new Properties();
 			prop.load(fis);
 			configs.setUrl(prop.getProperty("url"));
+			configs.setLoginUrl(prop.getProperty("loginUrl"));
+			configs.setRegisterUrl(prop.getProperty("registerUrl"));
 		//	configs.setBrowser(prop.getProperty("browser"));
 			configs.setUserName(prop.getProperty("userName"));
 			configs.setPassword(prop.getProperty("password"));		

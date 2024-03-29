@@ -10,11 +10,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import config.CommonConfigs;
 import junit.framework.Assert;
 
 public class DSAlgoIntroductionPage {
 
 	private WebDriver driver;
+	private CommonConfigs commonConfigs;
 	public WebDriverWait  wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	private By dataStructureDropdown = By.xpath("//a[@class='nav-link dropdown-toggle']");
 	private By dsDropdownOptions = By.xpath("//a[@class='dropdown-item']") ;
@@ -30,8 +32,10 @@ public class DSAlgoIntroductionPage {
 	private List<WebElement> options;
 	public String logErrmsg;
 
-	public DSAlgoIntroductionPage(WebDriver driver) {
+	public DSAlgoIntroductionPage(WebDriver driver, CommonConfigs commonConfigs) {
 		this.driver = driver;
+		this.commonConfigs = commonConfigs;
+		this.driver.get(commonConfigs.getUrl());
 	}
 	
 	//clicking on data structure drop down menu

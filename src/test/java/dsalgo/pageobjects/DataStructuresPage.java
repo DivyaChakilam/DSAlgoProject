@@ -15,7 +15,7 @@ import utilities.TestContextSetup;
 
 public class DataStructuresPage 
 {
-    private WebDriver driver;
+    public WebDriver driver;
 	private CommonConfigs commonConfigs;
 	private By dsgetStarted = By.xpath("//a[@href='data-structures-introduction']");
 	private By timecomplexity = By.xpath("//a[text()='Time Complexity']");
@@ -33,6 +33,7 @@ public class DataStructuresPage
 	{
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
+		//this.driver.get(commonConfigs.getLoginUrl());
 		//this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 	}
 	public CommonConfigs getCommonConfigs() {

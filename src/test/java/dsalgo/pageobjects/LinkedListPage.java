@@ -9,7 +9,7 @@ import config.CommonConfigs;
 public class LinkedListPage 
 {
 	
-		private WebDriver driver;
+		public WebDriver driver;
 		private CommonConfigs commonConfigs;
 		private By llistgetStarted = By.xpath("//a[@href='linked-list']");
 		private By introduction = By.xpath("//a[text()='Introduction']");

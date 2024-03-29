@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 
 public class QueuePage {
 
-	private WebDriver driver;
+	public WebDriver driver;
 	private CommonConfigs commonConfigs;
 
 	private By queueGetStartedLoc = By.xpath("//a[@href='queue']");

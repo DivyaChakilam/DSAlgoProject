@@ -10,7 +10,7 @@ import config.CommonConfigs;
 
 public class GraphPage {
 
-	private WebDriver driver;
+	public WebDriver driver;
 	private CommonConfigs commonConfigs;
 	private By grpahGetStartedLoc = By.xpath("//h5[contains(text(),'Graph')]/..//a");
 	WebElement graphTopics;

@@ -8,6 +8,7 @@ import org.junit.Assert;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
+import config.CommonLocators;
 import dsalgo.pageobjects.ArraysPage;
 import dsalgo.pageobjects.LoginPage;
 import dsalgo.pageobjects.QueuePage;
@@ -26,7 +27,7 @@ public class QueuePageStepDefinitions {
 	public LoginPage loginpage;
 	TestContextSetup testContSetup ;
 	public RegisterPage registerpage;
-	public ArraysPage arraypage;
+	//public ArraysPage arraypage;
 	public QueuePage queuepage;
 	public String expTitle;
 	public String inputCode;
@@ -35,7 +36,7 @@ public class QueuePageStepDefinitions {
 	public QueuePageStepDefinitions(TestContextSetup testContSetup) {
 		this.testContSetup = testContSetup;
 		this.loginpage = testContSetup.pageObjManager.getLoginPage();
-		this.arraypage = testContSetup.pageObjManager.getArraysPage();
+		//this.arraypage = testContSetup.pageObjManager.getArraysPage();
 		this.queuepage = testContSetup.pageObjManager.getQueuePage();
 	}
 
@@ -48,7 +49,7 @@ public void user_clicks_get_started_below_queue_ds() {
 @Then("User should be redirected to Queue Page")
 public void user_should_be_redirected_to_queue_page() {
 	String ExpTitle = "Queue";
-	Assert.assertEquals(arraypage.getTitleName(), ExpTitle);
+	Assert.assertEquals(CommonLocators.getTitleName(this.queuepage.driver), ExpTitle);
 	LoggerLoad.info("User Landed on Queue Page");
 }
 
@@ -65,17 +66,17 @@ public void user_clicks_on_link_under_queue_page(String link) {
 
 @Then("User should be redirected to  clicked link Page")
 public void user_should_be_redirected_to_clicked_link_page() {
-	 Assert.assertEquals(arraypage.getTitleName(),expTitle);
+	 Assert.assertEquals(CommonLocators.getTitleName(this.queuepage.driver),expTitle);
 }
 
 @When("User clicks on Queue page Try Here Button")
 public void user_clicks_on_queue_page_try_here_button() {
-	arraypage.tryHereClick();
+	CommonLocators.tryHereClick(this.queuepage.driver);
 }
 
 @Then("User should be redirected to Queue Editor's page with Run Button")
 public void user_should_be_redirected_to_queue_editor_s_page_with_run_button() {
-	Assert.assertEquals(arraypage.checkRunButton(), true);
+	Assert.assertEquals(CommonLocators.checkRunButton(this.queuepage.driver), true);
 }
 
 @When("User clicks on Run Button after entering code {string} and {int}")
@@ -93,26 +94,26 @@ public void user_clicks_on_run_button_after_entering_code_and(String sheetName, 
 	expoutput = userData.get(rowNumber).get("Output");
 	System.out.println("Expected Output : "+expoutput);
 	//Thread.sleep(500);
-	arraypage.sendCodeToEditor(inputCode);
+	CommonLocators.sendCodeToEditor(inputCode, this.queuepage.driver);
 	
-	arraypage.runButtonClick();
+	CommonLocators.runButtonClick(this.queuepage.driver);
 }
 
 @Then("User will be able to see the output on the console")
 public void user_will_be_able_to_see_the_output_on_the_console() {
 	  if(inputCode.equals(" ")) {
-		   Assert.assertEquals(expoutput, arraypage.getOutput());
+		   Assert.assertEquals(expoutput, CommonLocators.getOutput(this.queuepage.driver));
 		  
 	   }
 	   else if(inputCode.equalsIgnoreCase("hello world")) {
 		   System.out.println("Entered this condition");
 		   LoggerLoad.info("Entered this condition");
-		   arraypage.navigateToAlert();
-		  Assert.assertEquals(expoutput, arraypage.alertMessage);
-		   arraypage.acceptAlert();
+		   CommonLocators.navigateToAlert(this.queuepage.driver);
+		  Assert.assertEquals(expoutput, CommonLocators.alertMessage);
+		  CommonLocators.acceptAlert(this.queuepage.driver);
 	   }
 	   else if(inputCode.equals("print('Hello, world!'")) {
-		   Assert.assertEquals(expoutput, arraypage.getOutput()); 
+		   Assert.assertEquals(expoutput, CommonLocators.getOutput(this.queuepage.driver)); 
 	   }
 }
 

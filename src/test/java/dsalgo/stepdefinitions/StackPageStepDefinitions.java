@@ -40,10 +40,12 @@ public class StackPageStepDefinitions {
 
 	@Given("^User is logged in and landed on Home Page$")
 	public void user_logged_in_and_landed_on_home_page() {
-		LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
-		landingPage.getStartedClick();
-		DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-		dsalgoIntroduction.clickLogin();
+		/*
+		 * LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
+		 * landingPage.getStartedClick(); DSAlgoIntroductionPage dsalgoIntroduction =
+		 * testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+		 * dsalgoIntroduction.clickLogin();
+		 */
 		loginpage.enterUsername(stackpage.getCommonConfigs().getUserName());
 		loginpage.enterPassword(stackpage.getCommonConfigs().getPassword());
 		loginpage.submitLogin();

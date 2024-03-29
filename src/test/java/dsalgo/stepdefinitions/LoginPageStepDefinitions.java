@@ -24,23 +24,23 @@ public class LoginPageStepDefinitions {
 	
 	public LoginPage loginpage;
 	TestContextSetup testContSetup ;
-	public RegisterPage registerpage;
+	//public RegisterPage registerpage;
 	public int rowNum;
 	public String Message;
 
 	public LoginPageStepDefinitions(TestContextSetup testContSetup) {
 		this.testContSetup = testContSetup;
 		this.loginpage = testContSetup.pageObjManager.getLoginPage();
-		this.registerpage = testContSetup.pageObjManager.getRegisterPage();
+		//this.registerpage = testContSetup.pageObjManager.getRegisterPage();
 	}
 	
 	@Given("User landed on Login Page")
 	public void user_landed_on_login_page() {
 	    
-		LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
-		landingPage.getStartedClick();
-		DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-		dsalgoIntroduction.clickLogin();
+		//LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
+		//landingPage.getStartedClick();
+		//DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+		//dsalgoIntroduction.clickLogin();
 		LoggerLoad.info("\t User Landed on Login Page");
 	}
 
@@ -72,13 +72,13 @@ public class LoginPageStepDefinitions {
 	@Then("User should get error validation message")
 	public void user_should_get_error_validation_message() {
 		if(rowNum == 0 || rowNum == 1 ) {
-		    Assert.assertEquals(registerpage.inputFieldValMess(), Message );
+		    Assert.assertEquals(loginpage.inputFieldValMess(), Message );
 		} else if(rowNum ==2 ||rowNum ==3 || rowNum ==4 ){
 			LoggerLoad.info("I have entered else block");
-			Assert.assertEquals(registerpage.getErrorMssg(),Message );
-			Assert.assertEquals(registerpage.errorMessage, Message);
-			registerpage.getErrorMssg();
-			LoggerLoad.info("Expected Message :" + registerpage.getErrorMssg());
+			Assert.assertEquals(loginpage.getErrorMssg(),Message );
+			Assert.assertEquals(loginpage.errorMessage, Message);
+			loginpage.getErrorMssg();
+			LoggerLoad.info("Expected Message :" + loginpage.getErrorMssg());
 		}
 	}
 
@@ -120,6 +120,6 @@ public class LoginPageStepDefinitions {
 	@Then("User should get error validation message for emptyfields")
 	public void user_should_get_error_validation_message_for_emptyfields() {
 		//Assert.assertEquals(registerpage.inputFieldValMess(),Message );
-		LoggerLoad.info("Error validation message: "+registerpage.inputFieldValMess());
+		LoggerLoad.info("Error validation message: "+loginpage.inputFieldValMess());
 	}
 }

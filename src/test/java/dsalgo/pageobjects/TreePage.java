@@ -30,6 +30,8 @@ public class TreePage {
 	public TreePage(WebDriver driver, CommonConfigs commonConfigs) {
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
+		//this.driver.get(commonConfigs.getLoginUrl());
+
 		//this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 	}
 

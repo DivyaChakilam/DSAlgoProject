@@ -25,10 +25,13 @@ public class RegisterPageStepDefinitions {
 	//this is background for all the scenarios
 	@Given("User landed on Register Page")
 	public void user_landed_on_register_page() {
-		LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
-		landingPage.getStartedClick();
-		DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-		dsalgoIntroduction.clickRegister();
+		/*
+		 * LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
+		 * landingPage.getStartedClick(); DSAlgoIntroductionPage dsalgoIntroduction =
+		 * testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+		 * dsalgoIntroduction.clickRegister();
+		 */
+		LoggerLoad.info("\t User Landed on Register Page");
 	}
 
 	//user is giving all fields empty

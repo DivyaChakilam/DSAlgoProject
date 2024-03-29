@@ -38,10 +38,10 @@ public class ArrayPageStepDefinitions {
 
 	@Given("User logged in and is on DSHome Page")
 	public void user_logged_in_and_is_on_ds_home_page() {
-		LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
-		landingPage.getStartedClick();
-		DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-		dsalgoIntroduction.clickLogin();
+		//LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
+		//landingPage.getStartedClick();
+		//DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+		//dsalgoIntroduction.clickLogin();
 		loginpage.enterUsername(arraypage.getCommonConfigs().getUserName());
 		loginpage.enterPassword(arraypage.getCommonConfigs().getPassword());
 		loginpage.submitLogin();

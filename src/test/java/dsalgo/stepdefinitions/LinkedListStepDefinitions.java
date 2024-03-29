@@ -1,6 +1,9 @@
 package dsalgo.stepdefinitions;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
+
+import config.CommonLocators;
+
 import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 import java.time.Duration;
@@ -32,7 +35,7 @@ public class LinkedListStepDefinitions
 		public String inputCode;
 		public String expTitle;
 		public String expOutput;
-		public TreePage treepage;
+		//public TreePage treepage;
 		public String outputMessage = "Hello,World!";
 
 		public LinkedListStepDefinitions(TestContextSetup testContSetup) 
@@ -40,16 +43,18 @@ public class LinkedListStepDefinitions
 			this.testContSetup = testContSetup;
 			this.loginpage = testContSetup.pageObjManager.getLoginPage();
 			this.linkedlistpage = testContSetup.pageObjManager.getLinkedListPage();
-			this.treepage = testContSetup.pageObjManager.getTreePage();
+			//this.treepage = testContSetup.pageObjManager.getTreePage();
 		}
 
 		@Given("^User has logged in and landed on Home Page$")
 		public void user_logged_in_and_landed_on_home_page()
 		{
-			LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
-			landingPage.getStartedClick();
-			DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-			dsalgoIntroduction.clickLogin();
+			/*
+			 * LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
+			 * landingPage.getStartedClick(); DSAlgoIntroductionPage dsalgoIntroduction =
+			 * testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+			 * dsalgoIntroduction.clickLogin();
+			 */
 			loginpage.enterUsername(linkedlistpage.getCommonConfigs().getUserName());
 			loginpage.enterPassword(linkedlistpage.getCommonConfigs().getPassword());
 			loginpage.submitLogin();
@@ -115,22 +120,22 @@ public class LinkedListStepDefinitions
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
 	//	Thread.sleep(500);
-		treepage.sendCodeToEditor(inputCode);
-		treepage.runButtonClick();
+		CommonLocators.sendCodeToEditor(inputCode, this.linkedlistpage.driver);
+		CommonLocators.runButtonClick(this.linkedlistpage.driver);
 		
 	}
 	
 	@Then("User will be able to see the output on the Linked List console")
 	public void user_should_be_able_to_see_the_output_on_the_stack_data_structure_console() {
 		if(inputCode.equals(" ")) {
-			Assert.assertEquals(expOutput, treepage.getOutput());
+			Assert.assertEquals(expOutput, CommonLocators.getOutput(this.linkedlistpage.driver));
 		} else if(inputCode.equalsIgnoreCase("hello world")) {
 			LoggerLoad.info("Entered this condition");
-			treepage.navigateToAlert();
-			Assert.assertEquals(expOutput, treepage.alertMessage);
-			treepage.acceptAlert();
+			CommonLocators.navigateToAlert(this.linkedlistpage.driver);
+			Assert.assertEquals(expOutput, CommonLocators.alertMessage);
+			CommonLocators.acceptAlert(this.linkedlistpage.driver);
 		} else if(inputCode.equals("print('Hello, world!'")) {
-			Assert.assertEquals(expOutput, treepage.getOutput()); 
+			Assert.assertEquals(expOutput, CommonLocators.getOutput(this.linkedlistpage.driver)); 
 		}
 	}
 }

@@ -1,6 +1,9 @@
 package dsalgo.stepdefinitions;
 
 import org.testng.Assert;
+
+import config.CommonLocators;
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
@@ -25,7 +28,7 @@ public class DataStructureStepDefinitions {
 	TestContextSetup testContSetup;
 	public RegisterPage registerpage;
 	public DataStructuresPage dataStructurespage;
-	public TreePage treepage;
+	//public TreePage treepage;
 	public String inputCode;
 	public String expOutput;
 	public String expTitle="Time Complexity";
@@ -34,16 +37,18 @@ public class DataStructureStepDefinitions {
 	public DataStructureStepDefinitions(TestContextSetup testContSetup) {
 		this.testContSetup = testContSetup;
 		this.loginpage = testContSetup.pageObjManager.getLoginPage();
-		this.treepage = testContSetup.pageObjManager.getTreePage();
+		//this.treepage = testContSetup.pageObjManager.getTreePage();
 		this.dataStructurespage = testContSetup.pageObjManager.getDataStructuresPage();
 	}
 
 	@Given("User logged in and landed on the HomePage")
 	public void user_logged_in_and_landed_on_the_homepage() {
-		LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
-		landingPage.getStartedClick();
-		DSAlgoIntroductionPage dsalgoIntroduction = testContSetup.pageObjManager.getDSAlgoIntroductionPage();
-		dsalgoIntroduction.clickLogin();
+		/*
+		 * LandingPage landingPage = testContSetup.pageObjManager.getLandingPage();
+		 * landingPage.getStartedClick(); DSAlgoIntroductionPage dsalgoIntroduction =
+		 * testContSetup.pageObjManager.getDSAlgoIntroductionPage();
+		 * dsalgoIntroduction.clickLogin();
+		 */
 		loginpage.enterUsername(dataStructurespage.getCommonConfigs().getUserName());
 		loginpage.enterPassword(dataStructurespage.getCommonConfigs().getPassword());
 		loginpage.submitLogin();
@@ -87,7 +92,7 @@ public class DataStructureStepDefinitions {
 
 	@When("User clicks on the Try Here Button")
 	public void user_clicks_on_the_try_here_button() {
-		dataStructurespage.tryHereClick();
+		CommonLocators.tryHereClick(this.dataStructurespage.driver);
 		
 	}
 
@@ -112,9 +117,9 @@ public class DataStructureStepDefinitions {
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
 		
-		treepage.sendCodeToEditor(inputCode);
+		CommonLocators.sendCodeToEditor(inputCode, this.dataStructurespage.driver);
 		//Thread.sleep(500);
-		treepage.runButtonClick();
+		CommonLocators.runButtonClick(this.dataStructurespage.driver);
 
 	}
 

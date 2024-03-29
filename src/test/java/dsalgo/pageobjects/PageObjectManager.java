@@ -26,22 +26,22 @@ public class PageObjectManager {
 		this.commonConfigs = commonConfigs;
 	}
 	public LandingPage getLandingPage() {
-		landingPage = new LandingPage(driver);
+		landingPage = new LandingPage(driver, commonConfigs);
 		return landingPage;
 	}
 
 	public DSAlgoIntroductionPage getDSAlgoIntroductionPage() {
-		dsalgoIntroduction= new DSAlgoIntroductionPage(driver);
+		dsalgoIntroduction= new DSAlgoIntroductionPage(driver, commonConfigs);
 		return dsalgoIntroduction;
 	}
 
 	public RegisterPage getRegisterPage() {
-		registerPage= new RegisterPage(driver);
+		registerPage= new RegisterPage(driver, commonConfigs);
 		return registerPage;
 	}
 
 	public LoginPage getLoginPage() {
-		loginPage = new LoginPage(driver);
+		loginPage = new LoginPage(driver, commonConfigs);
 		return loginPage;
 	}
 

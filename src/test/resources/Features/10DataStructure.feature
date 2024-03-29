@@ -10,7 +10,7 @@ Feature: Test Case Scenarios for DS Introduction
     Given User is on DS Page 
     When User clicks on Time Complexity in DS Page
     Then User should be redirected to clicked link Page
-    When User clicks on Try Here Button
+    When User clicks on the Try Here Button
     Then User should be redirected to DS Editor's page with Run Button
     When User clicks on the Run after entering DS code "<SheetName>" and <RowNum>
     Then User will see output on console
