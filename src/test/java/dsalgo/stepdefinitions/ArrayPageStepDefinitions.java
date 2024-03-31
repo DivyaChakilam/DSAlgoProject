@@ -219,7 +219,7 @@ public class ArrayPageStepDefinitions {
 		arraypage.sendCodeToPractice(inputCode);
 
 		arraypage.submitButtonClick();
-		Thread.sleep(1000);
+		Thread.sleep(1300);
 
 	}
 
