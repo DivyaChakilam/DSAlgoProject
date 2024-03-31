@@ -99,7 +99,7 @@ public class ArraysPage {
 	
 	public void submitButtonClick()
 	{
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.findElement(submitButtonLoc).click();
 		}
 	
