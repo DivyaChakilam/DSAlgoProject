@@ -66,12 +66,6 @@ public class DataStructureStepDefinitions {
 		LoggerLoad.info("\t user landed on Data Structures-Introduction page");
 	}
 
-//	@When("User clicks on {string} under DS page")
-//	public void user_clicks_on_ds_page(String link) {
-//		expTitle = link;
-//		dataStructurespage.dsConceptsClick(link);
-//
-//	}
 
 	
 	@When("User clicks on Time Complexity in DS Page")
@@ -113,7 +107,6 @@ public class DataStructureStepDefinitions {
 		LoggerLoad.info("Expected Output : "+expOutput);
 		
 		treepage.sendCodeToEditor(inputCode);
-		//Thread.sleep(500);
 		treepage.runButtonClick();
 
 	}
