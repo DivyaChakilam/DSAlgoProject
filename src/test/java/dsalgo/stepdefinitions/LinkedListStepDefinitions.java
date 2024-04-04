@@ -17,7 +17,6 @@ import dsalgo.pageobjects.LoginPage;
 import dsalgo.pageobjects.RegisterPage;
 import dsalgo.pageobjects.TreePage;
 import io.cucumber.java.en.*;
-//import junit.framework.Assert;
 import utilities.ExcelReader;
 import utilities.LoggerLoad;
 import utilities.TestContextSetup;
@@ -114,7 +113,6 @@ public class LinkedListStepDefinitions
 		LoggerLoad.info("code enterd : "+inputCode);
 		expOutput = userData.get(rowNumber).get("Output");
 		LoggerLoad.info("Expected Output : "+expOutput);
-	//	Thread.sleep(500);
 		treepage.sendCodeToEditor(inputCode);
 		treepage.runButtonClick();
 		
