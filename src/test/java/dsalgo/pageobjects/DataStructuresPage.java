@@ -4,7 +4,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.Alert;
 
-//import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,7 +32,7 @@ public class DataStructuresPage
 	{
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
-		//this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		
 	}
 	public CommonConfigs getCommonConfigs() {
 		return commonConfigs;
@@ -48,11 +47,7 @@ public class DataStructuresPage
 	}
 
 	
-//	public void dsConceptsClick(String dsconcept) {
-//		By dsConcepts = By.xpath("//ul//a[text()='" + dsconcept + "']\"");
-//		driver.findElement(dsConcepts).click();
-//("//a[contains(text(),'"+dsconcept+"')]");
-//	}
+
 	public void TimeComplexityClick()
     {
     	driver.findElement(timecomplexity).click();
@@ -83,8 +78,8 @@ public class DataStructuresPage
 	}
 
 	public String navigateToAlert() {
-		alert = driver.switchTo().alert(); // switch to alert
-		alertMessage = driver.switchTo().alert().getText(); // capture alert message
+		alert = driver.switchTo().alert();
+		alertMessage = driver.switchTo().alert().getText();
 		System.out.println(alertMessage);
 		return alertMessage;
 	}
