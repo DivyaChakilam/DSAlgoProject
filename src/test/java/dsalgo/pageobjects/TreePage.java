@@ -20,7 +20,6 @@ public class TreePage {
 	private By runButtonLoc = By.xpath("//button");
 	private By editorTextBoxLoc = By.xpath("//form[@id='answer_form']/div/div/div/textarea");
 	private By outputMessLoc = By.xpath("//*[@id='output']");
-	//WebElement treeTopics;
 	public String outputMessage;
 	public Alert alert;
 	public String treetopic;
@@ -30,8 +29,7 @@ public class TreePage {
 	public TreePage(WebDriver driver, CommonConfigs commonConfigs) {
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
-		//this.wait = new WebDriverWait(driver,Duration.ofSeconds(5));
-	}
+		}
 
 	public CommonConfigs getCommonConfigs() {
 		return commonConfigs;
@@ -47,7 +45,6 @@ public class TreePage {
 	
 	public void treeConceptsClick(String treeconcept) {
 		By treeConcepts = By.xpath("//a[contains(text(),'"+treeconcept+"')]");
-		//wait.until(ExpectedConditions.elementToBeClickable(treeConcepts)).click();
 		driver.findElement(treeConcepts).click();
 	}
 	
@@ -64,9 +61,7 @@ public class TreePage {
 	}
 
 	public void sendCodeToEditor(String code) throws InterruptedException {
-	//	wait.until(ExpectedConditions.visibilityOfElementLocated(editorTextBoxLoc)).sendKeys(code);
 		Thread.sleep(500);
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 		driver.findElement(editorTextBoxLoc).sendKeys(code);
 	}
 
@@ -77,8 +72,8 @@ public class TreePage {
 	}
 
 	public String navigateToAlert() {
-		alert = driver.switchTo().alert(); // switch to alert
-		alertMessage = driver.switchTo().alert().getText(); // capture alert message
+		alert = driver.switchTo().alert();
+		alertMessage = driver.switchTo().alert().getText(); 
 		System.out.println(alertMessage);
 		return alertMessage;
 	}
