@@ -45,7 +45,6 @@ public class RegisterPage {
 
 	public String getErrorMssg() {
 		errorMessage = driver.findElement(errorMess).getText();
-		//System.out.println(errorMessage);
 		return errorMessage;
 	}
 }
