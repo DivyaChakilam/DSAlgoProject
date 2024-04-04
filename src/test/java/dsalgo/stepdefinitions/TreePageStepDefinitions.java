@@ -70,7 +70,6 @@ public class TreePageStepDefinitions {
 	@When("User clicks on {string} under tree page")
 	public void user_clicks_on_under_tree_page(String link) {
 		expTitle = link;
-		//LocatorUtility.conceptsClick(link, treepage.getDriver());
 		treepage.treeConceptsClick(link);
 	}
 
