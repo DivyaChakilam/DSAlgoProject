@@ -47,7 +47,6 @@ public class StackPage {
 	}
 	public void verfyHeading(String expectedTxt) {
 		String actualTxt = (driver.getTitle());
-		//String actualTxt = driver.findElement(verifyHeading).getText();
 		assertEquals(actualTxt, expectedTxt);
 	}
 	
@@ -70,7 +69,6 @@ public class StackPage {
 	}
 
 	public void sendCodeToEditor(String code) {
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.findElement(editorTextBoxLoc).sendKeys(code);
 	}
 
@@ -81,8 +79,8 @@ public class StackPage {
 	}
 
 	public String navigateToAlert() {
-		Alert alert = driver.switchTo().alert(); // switch to alert
-		String alertMessage = driver.switchTo().alert().getText(); // capture alert message
+		Alert alert = driver.switchTo().alert(); 
+		String alertMessage = driver.switchTo().alert().getText(); 
 		System.out.println(alertMessage);
 		return alertMessage;
 
