@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Optional;
 import java.util.Properties;
-//import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +18,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import config.CommonConfigs;
 import config.ConfigLoader;
-//import utilities.LoggerLoad;
+
 
 
 public class Base {
@@ -46,7 +45,6 @@ public class Base {
 				LoggerLoad.info("Testing on chrome");
 				ChromeOptions ChromeOpt = new ChromeOptions();
 				ChromeOpt.addArguments("--headless=new");
-			//	System.setProperty("webdriver.chrome.silentOutput","true");
 			//	driver = new ChromeDriver();
 				driver = new ChromeDriver(ChromeOpt);
 
@@ -63,11 +61,8 @@ public class Base {
 			//	driver = new EdgeDriver();
 				
 			}
-			//driver = new ChromeDriver();
+			
 			driver.manage().window().maximize();
-			//  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			// Set Page load timeout
-		//	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			driver.get(configs.getUrl());
 		}
 		return driver;
@@ -84,7 +79,6 @@ public class Base {
 			Properties prop = new Properties();
 			prop.load(fis);
 			configs.setUrl(prop.getProperty("url"));
-		//	configs.setBrowser(prop.getProperty("browser"));
 			configs.setUserName(prop.getProperty("userName"));
 			configs.setPassword(prop.getProperty("password"));		
 		} catch (FileNotFoundException e) {
