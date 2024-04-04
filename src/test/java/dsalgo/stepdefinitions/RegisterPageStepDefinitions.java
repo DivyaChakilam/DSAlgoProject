@@ -9,7 +9,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utilities.LoggerLoad;
-//import junit.framework.Assert;
 import utilities.TestContextSetup;
 
 public class RegisterPageStepDefinitions {
@@ -22,7 +21,7 @@ public class RegisterPageStepDefinitions {
 		this.registerpage = testContSetup.pageObjManager.getRegisterPage();
 	}
 	
-	//this is background for all the scenarios
+	
 	@Given("User landed on Register Page")
 	public void user_landed_on_register_page() {
 		LandingPage landingPage  = testContSetup.pageObjManager.getLandingPage();
@@ -31,19 +30,19 @@ public class RegisterPageStepDefinitions {
 		dsalgoIntroduction.clickRegister();
 	}
 
-	//user is giving all fields empty
+	
 	@Given("User leaves all fields empty")
 	public void User_leaves_all_fields_empty() {
 		LoggerLoad.info("\t User gives all empty fields");
 	}
 
-	//user is giving only user name and all other fields empty
+	
 	@Given("^User gives only (.*) field$")
 	public void User_gives_only_username_field(String username) {
 		LoggerLoad.info("\t User gives only username field");
 		registerpage.enterUserName(username);
 	}
-	//user is giving only user name password and without confirm password
+	
 	@Given("^User gives (.*) and (.*) without confirm password field$")
 	public void User_gives_username_password_without_confirmpasswordfield
 						(String username, String password) {
@@ -68,13 +67,13 @@ public class RegisterPageStepDefinitions {
 		registerpage.enterconfirmPassword(confirmpassword);
 	}
 
-	//user clicking on register button
+	
 	@When("User clicks RegisterButton")
 	public void user_clicks_register_button() {
 		registerpage.submitRegister();
 	}
 
-	//error validation message under username field
+	
 	@Then("^It should display an error (.*) below Username textbox$")
 	public void it_should_display_an_error_below_username_textbox(String message) {
 		registerpage.inputFieldValMess();
