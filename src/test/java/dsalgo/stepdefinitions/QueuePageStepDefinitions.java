@@ -92,7 +92,6 @@ public void user_clicks_on_run_button_after_entering_code_and(String sheetName, 
 
 	expoutput = userData.get(rowNumber).get("Output");
 	System.out.println("Expected Output : "+expoutput);
-	//Thread.sleep(500);
 	arraypage.sendCodeToEditor(inputCode);
 	
 	arraypage.runButtonClick();
