@@ -24,7 +24,6 @@ public class ArraysPage {
 	WebElement textBox;
 	
 	private By editorTextBoxLoc = By.xpath("//form[@id='answer_form']/div/div/div/textarea");
-	//private By practiceBoxLoc = By.xpath("//form[@id='answer_form']/div/div/div/textarea");
 	private By outputmsgline=By.id("output");
 	public String outputMessage;
 	public Alert alert;
@@ -33,7 +32,6 @@ public class ArraysPage {
 	private By arraysinPythonLoc = By.xpath("//a[@href='arrays-in-python']");
 	private By practcQtnLoc = By.xpath("//a[@href='/array/practice']");
 	private By submitButtonLoc=By.className("button");
-	//By.xpath("//input[@type='submit']");
 	public ArraysPage(WebDriver driver, CommonConfigs commonConfigs ) {
 		this.driver = driver;
 		this.commonConfigs = commonConfigs;
@@ -74,12 +72,10 @@ public class ArraysPage {
 	
 	public void runButtonClick()
 	{
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		driver.findElement(runButtonLoc).click();
+			driver.findElement(runButtonLoc).click();
 	}
 	
 	public void sendCodeToEditor(String Code) throws InterruptedException  {
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 		driver.findElement(editorTextBoxLoc).sendKeys(Code);
 		Thread.sleep(900);
 	}
@@ -108,7 +104,6 @@ public class ArraysPage {
 		return driver.getTitle();
 	}
 	public String getOutput() {
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		outputMessage = driver.findElement(outputmsgline).getText();
 		System.out.println(outputMessage);
 		return outputMessage;
