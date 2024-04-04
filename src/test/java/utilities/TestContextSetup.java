@@ -4,7 +4,7 @@ import dsalgo.pageobjects.PageObjectManager;
 
 public class TestContextSetup {
 	
-	//public WebDriver driver;
+	
 	public PageObjectManager pageObjManager;
 	public Base base;
 	
