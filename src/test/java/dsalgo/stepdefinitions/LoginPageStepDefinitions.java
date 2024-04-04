@@ -15,7 +15,6 @@ import dsalgo.pageobjects.RegisterPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-//import junit.framework.Assert;
 import utilities.ExcelReader;
 import utilities.LoggerLoad;
 import utilities.TestContextSetup;
@@ -119,7 +118,6 @@ public class LoginPageStepDefinitions {
 	
 	@Then("User should get error validation message for emptyfields")
 	public void user_should_get_error_validation_message_for_emptyfields() {
-		//Assert.assertEquals(registerpage.inputFieldValMess(),Message );
 		LoggerLoad.info("Error validation message: "+registerpage.inputFieldValMess());
 	}
 }
