@@ -10,7 +10,7 @@ import utilities.LoggerLoad;
 import utilities.TestContextSetup;
 
 public class LandingPageStepdefinitions{
-	//public WebDriver driver;
+	
 	LandingPage landingpage;
 	TestContextSetup testContSetup ;
 
@@ -34,8 +34,7 @@ public class LandingPageStepdefinitions{
 	@Then("user should land on dsalgo introduction page with register and signin links")
 	public void user_should_land_on_dsalgo_introduction_page_with_register_and_signin_links()
 			throws InterruptedException {
-	//	Thread.sleep(1000);
-		Assert.assertEquals(landingpage.checkRegisterLink(), true);
+			Assert.assertEquals(landingpage.checkRegisterLink(), true);
 		Assert.assertEquals(landingpage.checkSigninLink(), true);
 	}
 }
