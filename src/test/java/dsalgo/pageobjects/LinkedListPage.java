@@ -35,30 +35,7 @@ public class LinkedListPage
 		{
 			driver.findElement(introduction).click();
 		}
-		/*public void CreatingClick()
-		{
-			driver.findElement(creating).click();
-		}
-		public void TypesClick()
-		{
-			driver.findElement(types).click();
-		}
-		public void ImplementClick()
-		{
-			driver.findElement(implement).click();
-		}
-		public void TraversalClick()
-		{
-			driver.findElement(traversal).click();
-		}
-		public void InsertionClick()
-		{
-	      driver.findElement(insertion).click();;
-		}
-		public void DeletionClick()
-		{
-			driver.findElement(deletion).click();
-		}*/
+		
 		public void llConceptsClick(String llconcept) {
 			By llConcepts = By.xpath("//a[contains(text(),'"+llconcept+"')]");
 			driver.findElement(llConcepts).click();
@@ -80,7 +57,6 @@ public class LinkedListPage
 		}
 		public void sendCodeToEditor(String code)throws InterruptedException
 		{
-		//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 			driver.findElement(editorTextBox).sendKeys(code);
 		}
 		
