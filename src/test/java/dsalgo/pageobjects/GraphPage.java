@@ -14,7 +14,7 @@ public class GraphPage {
 	private CommonConfigs commonConfigs;
 	private By grpahGetStartedLoc = By.xpath("//h5[contains(text(),'Graph')]/..//a");
 	WebElement graphTopics;
-	// By treeConcepts = By.xpath("//a[contains(text(),'"+treeconcept+"')]");
+	
 
 	public GraphPage(WebDriver driver, CommonConfigs commonConfigs) {
 		this.driver = driver;
