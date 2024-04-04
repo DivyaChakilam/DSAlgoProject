@@ -18,10 +18,7 @@ public class DSAlgoIntroductionPage {
 	public WebDriverWait  wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	private By dataStructureDropdown = By.xpath("//a[@class='nav-link dropdown-toggle']");
 	private By dsDropdownOptions = By.xpath("//a[@class='dropdown-item']") ;
-	//private By loginErr = By.xpath("//div[contains(@class,'alert')]") ;
 	private By loginErr = By.xpath("//div[@role='alert']") ;
-	//private By loginErr = By.xpath("//div[contains(text(),'not logged')]");
-	//private By loginErr = By.xpath("//div[@class='alert alert-primary']");
 	private By getStartedBtn = By.xpath("//a[text()='Get Started'][1]");
 	private By registerLink = By.xpath("//a[text()=' Register ']");
 	private By registerButton = By.xpath("//input[@type='submit']");
@@ -34,14 +31,11 @@ public class DSAlgoIntroductionPage {
 		this.driver = driver;
 	}
 	
-	//clicking on data structure drop down menu
 	public void clickDropdownOptions() {
 		driver.findElement(dataStructureDropdown).click();
 	}
 	
-	//checking whether the dropdown options are displayed
 	public void showDropDown() {
-		//List<WebElement> 
 		options = driver.findElements(dsDropdownOptions);
 		for(WebElement option : options) {
 			if(option.getText().equalsIgnoreCase("Arrays")){
@@ -60,7 +54,7 @@ public class DSAlgoIntroductionPage {
 		}
 	}
 
-	//@Test(priority = 0)
+	
 	public void clickAnyDSItem(String selectOpt) {
 		options = driver.findElements(dsDropdownOptions);
 		for (int index = 0; index < options.size(); index++) {
@@ -72,25 +66,25 @@ public class DSAlgoIntroductionPage {
 		}
 	}
 
-	//user clicks on any getstarted button
+	
 	public void clickAnyGetStarted(){
 		driver.findElement(getStartedBtn).click();
 	}
-	//user gets error message
+	
 	public void loginErrMess() {
 		logErrmsg = driver.findElement(loginErr).getText();
 		System.out.println(wait.until(ExpectedConditions.visibilityOf(driver.findElement(loginErr))).getText());
 	}
 
-	//user clicks on Register Link
+	
 	public void clickRegister() {
 		driver.findElement(registerLink).click();
 	}
-	//check for register button if user lands on Register page
+	
 	public boolean checkRegButton() {
 		return driver.findElement(registerButton).isDisplayed();
 	}
-	//user clicks on Login Link
+	
 	public void clickLogin() {
 		driver.findElement(loginLink).click();
 	}
